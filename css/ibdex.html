@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav-black {
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-left: 20px;
+            background-color: black;
+            height: 50px;
+            color: white;
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+        }
+
+        .nav-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 10px;
+        }
+
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-pictures {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-basis: 100%;
+            justify-content: center;
+        }
+
+        .nav-pictures img {
+            height: 100px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        article {
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-title a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .meta {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .text {
+            margin: 10px 0;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .readmore a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        aside {
+            flex: 1;
+            padding-left: 20px;
+            border-left: 1px solid #ddd;
+        }
+
+        .side-title {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .footer-title {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .footer-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .footer-list li {
+            margin: 5px 0;
+        }
+
+        .footer-list a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .footer-list a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Travel Blog</h1>
+        <nav class="nav-black">
+            <div class="nav-item">NEW</div>
+            <div class="nav-item">COLUMN</div>
+            <div class="nav-item">SERIES</div>
+            <div class="nav-item">Q&A</div>
+            <div class="nav-item">CONTACT</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nav-pictures">
+            <img src="/1.jpg" alt="Travel Image 1">
+            <img src="/2.jpg" alt="Travel Image 2">
+            <img src="/3.jpg" alt="Travel Image 3">
+        </div>
+
+        <div class="content">
+            <article>
+                <h2 class="article-title"><a href="#">タイトルテキストテキストテキスト</a></h2>
+                <ul class="meta">
+                    <li><a href="#">2020/01/01</a></li>
+                    <li><a href="#">カテゴリ1</a></li>
+                </ul>
+                <a href="#"><img src="/1.jpg" alt="テキストテキストテキスト" style="width:100%; border-radius: 5px;"></a>
+                <p class="text">本文テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="readmore"><a href="#">READ MORE</a></div>
+            </article>
+
+            <article>
+                <h2 class="article-title"><a href="#">タイトルテキストテキストテキスト</a></h2>
+                <ul class="meta">
+                    <li><a href="#">2020/01/01</a></li>
+                    <li><a href="#">カテゴリ1</a></li>
+                </ul>
+                <a href="#"><img src="/2.jpg" alt="テキストテキストテキスト" style="width:100%; border-radius: 5px;"></a>
+                <p class="text">本文テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="readmore"><a href="#">READ MORE</a></div>
+            </article>
+
+            <article>
+                <h2 class="article-title"><a href="#">タイトルテキストテキストテキスト</a></h2>
+                <ul class="meta">
+                    <li><a href="#">2020/01/01</a></li>
+                    <li><a href="#">カテゴリ1</a></li>
+                </ul>
+                <a href="#"><img src="/3.jpg" alt="テキストテキストテキスト" style="width:100%; border-radius: 5px;"></a>
+                <p class="text">本文テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="readmore"><a href="#">READ MORE</a></div>
+            </article>
+        </div>
+
+        <aside>
+            <section class="author">
+                <img src="/2.jpg" alt="テキストテキストテキスト" height="100" width="200">
+                <h3 class="side-title">Name Name</h3>
+                <p class="profile">プロフィールテキストテキストテキストテキストテキストテキストテキスト</p>
+            </section>
+
+            <section class="ranking">
+                <h3 class="side-title">Ranking</h3>
+                <article>
+                    <a href="#">
+                        <img src="/1.jpg" alt="テキストテキストテキスト">
+                        <h4 class="article-title">タイトルテキストテキストテキスト</h4>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="/2.jpg" alt="テキストテキストテキスト">
+                        <h4 class="article-title">タイトルテキストテキストテキスト</h4>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="/3.jpg" alt="テキストテキストテキスト">
+                        <h4 class="article-title">タイトルテキストテキストテキスト</h4>
+                    </a>
+                </article>
+            </section>
+
+            <section class="archive">
+                <h3 class="side-title">Archive</h3>
+                <ul>
+                    <li><a href="#">XXXX年XX月</a></li>
+                    <li><a href="#">XXXX年XX月</a></li>
+                    <li><a href="#">XXXX年XX月</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h2 class="footer-title">About</h2>
+            <ul class="footer-list">
+                <li><a href="#">私たちについて</a></li>
+                <li><a href="#">チーム</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h2 class="footer-title">Menu</h2>
+            <ul class="footer-list">
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">ブログ</a></li>
+                <li><a href="#">サービス</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h2 class="footer-title">Follow Us</h2>
+            <div class="social-icons">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
